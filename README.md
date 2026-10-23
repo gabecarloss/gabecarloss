@@ -5,7 +5,8 @@
 Full-stack developer · Development Intern at **Mamute Tecnologia**<br/>
 Computer Science student at **ATITUS Educação** (4th semester) · Passo Fundo, Brazil
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logoColor=white)](https://www.linkedin.com/in/gabecarloss) [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:devgabrielrigo@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logoColor=white)](https://www.linkedin.com/in/gabecarloss) [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=devgabrielrigo@gmail.com)
+
 
 </div>
 
