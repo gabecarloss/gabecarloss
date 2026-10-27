@@ -2,36 +2,40 @@
 
 ## Gabriel Carlos
 
-Full-stack developer · Development Intern · Passo Fundo, Brazil
+Full-stack developer · Development Intern
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=devgabrielrigo@gmail.com)
 
 
 </div>
 
-I like solving real problems for real people. At work that means features that hold up in production and tools that non-technical users can operate on their own.
+I like solving real problems for real people. At work that means features that hold up in production and tools that non-technical users can operate on their own. I enjoy problems that cross boundaries: database, API, on-site device and screen.
 
 ---
 
-### Experience
+### What I've built
 
-**Development Intern, Mamute Tecnologia** · *May 2026 – present*<br/>
-ZapAgenda / QuadraSystem: a multi-brand scheduling SaaS for service businesses and sports venues, with WhatsApp integration and an AI chatbot.<br/>
+A scheduling platform for service businesses and sports venues, with WhatsApp booking and an AI chatbot.<br/>
 <sub>Private repository · 200+ commits · ~300 test files</sub>
 
-- **Video replays module (owner, end to end):** a physical button on the court generates a clip, with a video pipeline on Bunny Stream, FFmpeg intros and outros, a public portal, sponsor ads, live cameras and live streaming.
-- **Edge agent for on-site mini PCs:** Linux and Windows, one-command install, fleet OTA updates with rollback, and a Windows service with a C# installer and tray app.
+- **Instant replays (owner, end to end):** players press a button on the court and get the last few minutes as a clip. A PC cuts it with FFmpeg, adds intros and sponsors, uploads it to Bunny Stream, and it plays on a public portal and on the venue's TV.
 - **Android TV app (Kotlin):** a self-updating APK for the venue's screen, with remote-control navigation and performance tuned for Fire TV Stick.
-- **Scheduling core:** WhatsApp booking with concurrency-safe slots, a waitlist, AI date parsing, and customer self-service.
-- **Support and operations:** admin console with fleet monitoring, incident alerts, unified logs, support tickets and 2FA; an installation guide written for non-technical users.
-- **Quality:** idempotent migrations with a drift guard in CI, a hermetic test suite, and fixes for timezone, concurrency and IDOR bugs.
+- **Live cameras:** H.264 streams from the court remuxed to fMP4 and played in the browser with Media Source Extensions, plus live streaming.
+- **Edge agent:** a Node.js service on Linux and Windows PCs, with one-command install, fleet OTA updates with rollback, and a LAN cache that feeds the TV. On Windows it runs as a service, with a C# installer and tray app.
+- **Booking core:** WhatsApp booking with concurrency-safe slots on PostgreSQL, a waitlist, AI date parsing, and customer self-service.
+- **Support and operations:** an admin console with fleet monitoring, incident alerts, unified logs, support tickets and 2FA, plus an installation guide written for non-technical users.
+- **Quality:** idempotent migrations with a drift guard in CI, and fixes for timezone, concurrency and IDOR bugs.
+- **Testing:** unit and integration tests with Jest, gated in CI against a baseline; hardware tests across camera and button types; real installs of the edge agent on Linux and Windows PCs, with Windows also on every CI run; and Playwright for visual smoke tests and an end-to-end UX audit of the whole system.
+
+
+
 
 ### AI-assisted engineering
 
 I use **Claude Code** every day on a production monorepo, with the same review discipline as hand-written code: tests, CI and manually reviewed migrations.
 
 - I maintain layered `CLAUDE.md` files with the project's architecture and rules, plus project skills for verification, safe schema migrations, UI smoke tests and deploy promotion.
-- I set up guard-rail hooks, rolled out the security-guidance plugin to the team, and connect MCP servers (Sentry, Cloudflare, Mercado Pago).
+- I set up guard-rail hooks, rolled out the security-guidance plugin to the team, and connect MCP servers (Sentry, Cloudflare, Mercado Pago, Playwright).
 - I work with plan mode, subagents, persistent memory, and AI-assisted code and security review.
 
 ### Stack
@@ -44,14 +48,3 @@ I use **Claude Code** every day on a production monorepo, with the same review d
 - **Infra & quality:** Docker Swarm, GitHub Actions, Cloudflare R2, FFmpeg, Sentry, Winston, Jest, Playwright
 - **Integrations:** WhatsApp (Evolution API, Meta Cloud), OpenAI API, Bunny Stream, Mercado Pago, Pagar.me, Stripe, AWS SES
 - **Tools:** Claude Code, MCP, VS Code, WSL2, Dev Containers, Git, GitHub CLI, Postman, Jupyter
-
-### Projects
-
-| Project | Description | Stack |
-| --- | --- | --- |
-| [liberty-city-ceasefire](https://github.com/gabecarloss/liberty-city-ceasefire) | Repairs GTA III Definitive Edition saves stuck with a hostile-pedestrians effect. The save signature can't be forged, so the script patches game memory and lets the game write a valid save. | PowerShell |
-| [fraude-paysim](https://github.com/gabecarloss/fraude-paysim) | Fraud detection on financial transactions using the PaySim dataset, with a web demo. | Python, scikit-learn, FastAPI |
-| [ExpoHotel](https://github.com/gabecarloss/ExpoHotel) | Mobile hotel booking app with auth, date-based booking and payments. | React Native, Expo, Supabase, Stripe |
-| [MyWebsite](https://github.com/gabecarloss/MyWebsite) | Personal portfolio website. | HTML, CSS, JavaScript |
-
-<sub>University work in Java and Python (OOP and data structures) is in my [repositories](https://github.com/gabecarloss?tab=repositories).</sub>
