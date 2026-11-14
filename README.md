@@ -4,8 +4,6 @@
 
 Full-stack developer · Development Intern
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=devgabrielrigo@gmail.com)
-
 
 </div>
 
