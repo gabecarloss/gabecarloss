@@ -2,47 +2,34 @@
 
 ## Gabriel Carlos
 
-Full-stack developer · Development Intern
-
+Full-stack developer
 
 </div>
 
-I like solving real problems for real people. At work that means features that hold up in production and tools that non-technical users can operate on their own. I enjoy problems that cross boundaries: database, API, on-site device and screen.
-
----
+I build software that real businesses run on, from the database to the PC on site and the TV on the wall.
 
 ### What I've built
 
-A scheduling platform for service businesses and sports venues, with WhatsApp booking and an AI chatbot.<br/>
-<sub>Private repository · 200+ commits · ~300 test files</sub>
+**A complete management platform for salons, clinics and sports venues** <sub>(private · 270+ commits)</sub>
 
-- **Instant replays (owner, end to end):** players press a button on the court and get the last few minutes as a clip. A PC cuts it with FFmpeg, adds intros and sponsors, uploads it to Bunny Stream, and it plays on a public portal and on the venue's TV.
-- **Android TV app (Kotlin):** a self-updating APK for the venue's screen, with remote-control navigation and performance tuned for Fire TV Stick.
-- **Live cameras:** H.264 streams from the court remuxed to fMP4 and played in the browser with Media Source Extensions, plus live streaming.
-- **Edge agent:** a Node.js service on Linux and Windows PCs, with one-command install, fleet OTA updates with rollback, and a LAN cache that feeds the TV. On Windows it runs as a service, with a C# installer and tray app.
-- **Booking core:** WhatsApp booking with concurrency-safe slots on PostgreSQL, a waitlist, AI date parsing, and customer self-service.
-- **Support and operations:** an admin console with fleet monitoring, incident alerts, unified logs, support tickets and 2FA, plus an installation guide written for non-technical users.
-- **Quality:** idempotent migrations with a drift guard in CI, and fixes for timezone, concurrency and IDOR bugs.
-- **Testing:** unit and integration tests with Jest, gated in CI against a baseline; hardware tests across camera and button types; real installs of the edge agent on Linux and Windows PCs, with Windows also on every CI run; and Playwright for visual smoke tests and an end-to-end UX audit of the whole system.
+This isn't another CRUD scheduling app. It's the whole product a business runs on: web and mobile app, a public booking portal, a WhatsApp bot, online payments, invoicing, cash register and stock, plus on-site hardware for court replays. It runs as multi-tenant SaaS with 46 feature modules, 33 background workers, 19 cron jobs, more than 10 external integrations and 1,300+ test files.
 
+- WhatsApp booking with an AI chatbot and concurrency-safe slots on PostgreSQL
+- Customer portal with packages, a loyalty card and team invites
+- Back office: per-role permissions, finance, cash register, stock and promotions
+- **Instant replays:** press a button on the court and get the clip on your phone and on the venue's TV. Edge agent on Linux and Windows, FFmpeg, an Android TV app in Kotlin, fleet OTA updates
+- Node.js · Express · Prisma · PostgreSQL · Redis/BullMQ · React Native/Expo · Docker Swarm · Evolution/Meta WhatsApp · Bunny Stream · Cloudflare R2 · OpenAI · Pagar.me · Mercado Pago
 
+**Autora** <sub>(private)</sub>: a desktop app where an AI agent per social media profile turns a video library into original short-form edits and learns from each post's metrics. Python, FastAPI, Claude API, FFmpeg, React.
 
+**[fraude-paysim](https://github.com/gabecarloss/fraude-paysim)**: fraud detection on PaySim with eight scikit-learn pipelines and a FastAPI demo.
 
-### AI-assisted engineering
+**Airflow + Kafka pipeline** <sub>(private)</sub>: Parquet files land in S3 and are streamed to Kafka, with delivery confirmed.
 
-I use **Claude Code** every day on a production monorepo, with the same review discipline as hand-written code: tests, CI and manually reviewed migrations.
+**[liberty-city-ceasefire](https://github.com/gabecarloss/liberty-city-ceasefire)**: fixes broken GTA III DE saves by patching the running game's memory, so the game re-signs the save.
 
-- I maintain layered `CLAUDE.md` files with the project's architecture and rules, plus project skills for verification, safe schema migrations, UI smoke tests and deploy promotion.
-- I set up guard-rail hooks, rolled out the security-guidance plugin to the team, and connect MCP servers (Sentry, Cloudflare, Mercado Pago, Playwright).
-- I work with plan mode, subagents, persistent memory, and AI-assisted code and security review.
+**[ExpoHotel](https://github.com/gabecarloss/ExpoHotel)**: a hotel booking app with React Native, Supabase and Stripe.
 
 ### Stack
 
-<img src="https://skillicons.dev/icons?i=ts,nodejs,react,postgres,prisma,redis,kotlin,cs,python,docker,githubactions,cloudflare,linux" height="40" alt="TypeScript, Node.js, React Native, PostgreSQL, Prisma, Redis, Kotlin, C#, Python, Docker, GitHub Actions, Cloudflare, Linux"/>
-
-- **Languages:** TypeScript, JavaScript, SQL, Kotlin, C#, Python, Java, Bash, PowerShell
-- **Frontend & mobile:** React Native, Expo Router, Zustand, Zod, Android TV, HTML/CSS
-- **Backend & data:** Node.js, Express, Prisma, PostgreSQL (Supabase), Redis, BullMQ, Socket.IO, Joi, FastAPI, scikit-learn
-- **Infra & quality:** Docker Swarm, GitHub Actions, Cloudflare R2, FFmpeg, Sentry, Winston, Jest, Playwright
-- **Integrations:** WhatsApp (Evolution API, Meta Cloud), OpenAI API, Bunny Stream, Mercado Pago, Pagar.me, Stripe, AWS SES
-- **Tools:** Claude Code, MCP, VS Code, WSL2, Dev Containers, Git, GitHub CLI, Postman, Jupyter
+<img src="https://skillicons.dev/icons?i=ts,nodejs,react,postgres,prisma,redis,kotlin,cs,py,java,fastapi,kafka,docker,githubactions,cloudflare,linux" height="40" alt="TypeScript, Node.js, React Native, PostgreSQL, Prisma, Redis, Kotlin, C#, Python, Java, FastAPI, Kafka, Docker, GitHub Actions, Cloudflare, Linux"/> <img src="https://cdn.simpleicons.org/claude" height="40" alt="Claude"/>
